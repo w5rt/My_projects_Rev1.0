@@ -1,0 +1,42 @@
+# sorting
+a = int(input())
+b = int(input())
+c = int(input())
+m = a
+if a <= b <= c:
+    print(c, '\n', a, '\n', b)
+elif    a <= c <= b:
+    print(b, '\n', a, '\n', c)
+elif    b <= c <= a:
+    print(a, '\n', b, '\n', c)
+elif    b <= a <= c:
+    print(c, '\n', b, '\n', a)
+elif    c <= a <= b:
+    print(b, '\n', c, '\n', a)
+elif    c <= b <= a:
+    print(a, '\n', c, '\n', b)
+
+# программисты
+n = int(input())
+if n % 10 == 1 and n % 100 != 11:
+    print(n, "программист")
+elif (n % 10 == 2 and n % 100 != 12) or (n % 10 == 3 and n % 100 != 13) or (n % 10 == 4 and n % 100 != 14):
+    print(n, "программиста")
+else:
+    print(n, "программистов")    
+    
+    
+# lucky ticket
+n = int(input())
+a = int(n % 10)
+b = int((n % 100) // 10)
+c = int((n % 1000) // 100)
+d = int((n % 10000) // 1000)
+e = int((n % 100000) // 10000)
+f = int((n % 1000000) // 100000)
+
+if ((a + b + c) == (d + f + e)):
+    print("Счастливый")
+else:
+    print("Обычный")
+    
