@@ -1,0 +1,41 @@
+# формула Герона
+a = int(input())
+b = int(input())
+c = int(input())
+p = (a + b + c) / 2
+S = (p * (p - a) * (p - b) * (p - c)) ** 0.5
+print(S)
+
+#intervals
+import math
+a = int(input('input value '))
+if (-15 < a <= 12) or (14 < a < 17) or (19 <= a < math.inf):
+    print('True')
+else:
+    print('False')
+    
+# calculator
+a = float(input())
+b = float(input())
+s = input()
+if (b == 0) and (s == 'mod'):
+    print("Деление на 0!")
+elif (b == 0) and (s == 'div'):
+    print("Деление на 0!")
+elif (b == 0) and (s == '/'):
+    print("Деление на 0!")    
+else:
+    if s == 'mod':
+        print(a % b)
+    elif s == 'pow':
+        print(a ** b)
+    elif s == 'div':
+        print(a // b)
+    elif s == '+':
+        print(a + b)
+    elif s == '-':
+        print(a - b)
+    elif s == '/':
+        print(a / b)
+    elif s == '*':
+        print(a * b)
