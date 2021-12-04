@@ -1,0 +1,68 @@
+# сумма подряд идущих чисел в интервале [a, b]
+a = int(input())
+b = int(input())
+i = a
+k = a
+while i < b:
+    i += 1
+    k = k + i
+else:
+    print(k)
+    
+# сумма подряд идущих чисел в интервале [a, b] (вариант преподавателя)    
+a = int(input())
+b = int(input())
+s = 0
+i = a
+while i <= b:
+    s += i
+    i += 1
+    print(s)    
+    
+# сумма последовательно вводимых чисел, пока не введут ноль
+a = 1
+k = 0
+while a != 0:
+    a = int(input())
+    k = k + a
+else:
+    print(k)
+
+
+
+# Наименьшее общее кратное
+a = int(input()) # 7
+b = int(input()) # 5
+i = a # 7
+k = 0
+p = a * b # 35
+if (a or b) == 1:
+    if a > b:
+        print(a)
+    else:
+        print(b)
+else:
+
+    if a > b:
+        i = b # 5
+        while i <= p:
+            if (i % a == 0) and (i % b == 0):
+                k = i
+                p = i - 1
+
+            else:
+                i += 1
+        else:
+            print(k)
+    else:
+        while i <= p:
+            if (i % a == 0) and (i % b == 0):
+                k = i
+                p = i - 1
+
+            else:
+                i += 1
+        else:
+            print(k)
+
+
