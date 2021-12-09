@@ -1,0 +1,36 @@
+# таблица умножения
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+q = a
+o = c
+h = 1
+vvv = 1
+for i in range(abs(a - b) + 2):             # a = y
+    l = 1
+    if h == 1:
+        y = 1
+    elif h == 2:
+        y = q
+    else:
+        q = q + 1
+        y = q
+    o = c
+    for j in range(abs(c - d) + 2):     # c = x
+            if l == 1:
+                x = 1
+            elif l == 2:
+                x = o
+            else:
+                o = o + 1
+                x = o
+            result = y * x
+            if x == 1 and y == 1 and vvv == 1:
+                print('', end='\t')
+            else:
+                print(result, end='\t')
+            l += 1
+            vvv += 1
+    h += 1
+    print()
